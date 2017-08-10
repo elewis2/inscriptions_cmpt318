@@ -7,23 +7,14 @@ A sample file is also available at that link.
 To run the code:
 The code and output are provided as notebooks. The notebooks should be run from the same location as the extracted inscription files. Alternatively, the results are readable on github.
 
-To run them, the following imports will be needed:
+To run them, the following libraries are needed (in addition to pandas, numpy, matplotlib, scipy.stats and math):
 
-import glob
-import pandas as pd
-import bs4 as bs
-from bs4 import BeautifulSoup
-import lxml as lx
-from bs4 import NavigableString
+glob,
+bs4 (BeautifulSoup),
+lxml,
 
-import greek_accentuation.characters as gachar
-import greek_accentuation.syllabify as gasyb
-import math
-import nltk
-from nltk.tokenize.regexp import WhitespaceTokenizer
-import matplotlib.pyplot as plt
-import scipy.stats as sp
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.feature_extraction.text import TfidfTransformer
+greek-accentuation (https://github.com/jtauber/greek-accentuation),
+nltk,
+sklearn
 
 The first notebook to run needs to be epidoc_to_csv. Either of the others can be run after that.
